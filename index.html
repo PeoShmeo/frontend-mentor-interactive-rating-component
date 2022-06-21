@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src = "script.js" defer></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <div data-rating-state class="rating-state active">
+    <div class="star-icon-container">
+      <img class="star-icon" src="images/icon-star.svg" alt="star-icon">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+      offering!</p>
+    <div class="rating-button-container">
+      <button class="rating-button" data-rating-btn>1</button>
+      <button class="rating-button" data-rating-btn>2</button>
+      <button class="rating-button" data-rating-btn>3</button>
+      <button class="rating-button" data-rating-btn>4</button>
+      <button class="rating-button" data-rating-btn>5</button>
+    </div>
+    <button class="submit-button" data-submit-btn>SUBMIT</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div data-submit-state class="submit-state">
+    <img class="thank-you-img" src="images/illustration-thank-you.svg" alt="thank-you-illustration">
+    <div class="rating">
+      <p data-rating-text class="rating-text">You selected 4 out of 5</p> <!-- Make it variable -->
+    </div>
+    <h1 class="thank-you-header">Thank you!</h1>
+    <p class="thank-you-text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+      touch!</p>
+  </div>
+
+  <!-- Thank you state end -->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/PeoShmeo">Cole Kamgar</a>.
+  </div>
+</body>
+
+</html>
